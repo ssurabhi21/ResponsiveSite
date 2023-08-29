@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - My Website</title>
+  <!-- Add Bootstrap CSS link here -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Custom CSS for buttons -->
+  <style>
+    .buttons-container {
+      margin-bottom: 20px;
+      /* Adjust the margin-top as needed to create space between header and buttons */
+      margin-top: 80px;
+    }
+
+    /* Adjust the button alignment and margin as needed */
+    .buttons-container .btn {
+      margin-top: 5px;
+    }
+
+    /* Custom navigation menu styles */
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-toggle::after {
+      /* Add Font Awesome icon for dropdown toggle */
+      font-family: 'Font Awesome 6 Free'; /* Specify Font Awesome font family */
+      content: "\f078"; /* Replace with the Unicode of the desired icon (here, it's a down arrow) */
+      padding-left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top " style="background-color: #e3bf4d;">
+    <div class="container">
+      <!-- Dropdown menu with multiple selections -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+        
+           <!-- Example single danger button -->
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Menu
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+        </li>
+        
+        <span class="navbar-text" style="margin-left: 20px;"> 
+          <img src="../../assets/images/ss3.png" alt="SS" style="width: 35px; height: 35px; margin-right: 10px;"> Surabhi Singh
+        </span>
+    
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="input-group">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+              <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
+            </button>
+          </div>
+        </div>
+      </form>
+         
+     
+
+      <!-- Right side navigation -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/signup']">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/service']">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+        </li>
+        
+     
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Us Content -->
+  <section class="py-5">
+    <div class="container">
+      <!-- Add a div for the buttons in the upper right corner -->
+      <div class="buttons-container d-flex justify-content-end">
+        <!-- Add three buttons here -->
+        <button type="button" class="btn btn-primary mx-2" style="background-color: #0099CC;">Section1</button>
+
+        <button type="button" class="btn btn-primary mx-2" style="background-color: #e3bf4d">Section1</button>
+        <button type="button" class="btn btn-primary mx-2" style="background-color: #888;">Section1</button>
+      </div>
+      <h2 class="text-center mb-4">About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et augue vel arcu volutpat congue. Quisque vel
+        orci ac lectus malesuada aliquam in vitae mauris. Vestibulum ante ipsum primis in faucibus orci luctus et
+        ultrices posuere cubilia curae; Proin sit amet ipsum vel tortor pellentesque mattis eu ac nulla. Nullam eu
+        imperdiet lectus. Nulla facilisi. Fusce vel mauris sed lectus dapibus venenatis eget a ligula. Cras
+        scelerisque auctor felis eu varius. Donec consectetur quam quis nisi tincidunt, nec fermentum elit auctor.
+        Praesent vehicula, nisi eu tincidunt gravida, odio tellus suscipit velit, vel tincidunt dui purus id mi.
+        Mauris auctor cursus est, nec porttitor nulla tincidunt ac.
+      </p>
+      <p>
+        Vestibulum fringilla sapien non ex tincidunt consectetur. Nullam id dui justo. Suspendisse fringilla elit
+        vel nunc lobortis, eget malesuada odio scelerisque. Nullam auctor ipsum quis metus venenatis, vel pharetra
+        lectus venenatis. Integer hendrerit, massa a volutpat fermentum, odio justo tincidunt nulla, ut mollis quam
+        justo eu metus. Sed tempus, dui et varius euismod, sapien purus suscipit odio, sit amet blandit elit purus
+        vel arcu. Quisque eu blandit lectus, id ullamcorper odio. Integer a libero nec purus tincidunt aliquet.
+      </p>
+      <p>
+        Vestibulum fringilla sapien non ex tincidunt consectetur. Nullam id dui justo. Suspendisse fringilla elit
+        vel nunc lobortis, eget malesuada odio scelerisque. Nullam auctor ipsum quis metus venenatis, vel pharetra
+        lectus venenatis. Integer hendrerit, massa a volutpat fermentum, odio justo tincidunt nulla, ut mollis quam
+        justo eu metus. Sed tempus, dui et varius euismod, sapien purus suscipit odio, sit amet blandit elit purus
+        vel arcu. Quisque eu blandit lectus, id ullamcorper odio. Integer a libero nec purus tincidunt aliquet.
+      </p>
+    </div>
+  </section>
+
+  
+
+  <!-- Add Bootstrap JS and jQuery link remains the same -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

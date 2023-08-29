@@ -1,0 +1,14 @@
+<div class="navbar">
+  <div *ngIf="isMobile" class="menu-toggle" (click)="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div [ngClass]="{'menu': true, 'active': isMenuOpen && isMobile}">
+    <a class="nav-link" [routerLink]="['/signup']">SignUp</a>
+    <a class="nav-link" [routerLink]="['/home']">Home</a>
+    <a class="nav-link" [routerLink]="['/about']">About</a>
+    <a class="nav-link" [routerLink]="['/service']">Services</a>
+    <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+  </div>
+</div>

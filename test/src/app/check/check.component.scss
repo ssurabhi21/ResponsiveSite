@@ -1,0 +1,12 @@
+.btn:not(:disabled):not(.disabled){
+    cursor: pointer;
+}
+.alert-danger .alert-heading, .alert-danger .media-figure [class*=nvg-icon] {
+    color: #f00;
+}
+.bg-primary {
+    background-color: #af8b1b!important;
+}
+.bg-dark {
+    background-color: #444!important;
+}
